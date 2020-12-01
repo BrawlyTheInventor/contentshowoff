@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return 'Invalid response. (required 2 but found 1)'
     
- @app.route('/redirect/<page>')
+@app.route('/redirect/<page>')
 def hello(name):
     return render_template('page.html', name=name)
 
